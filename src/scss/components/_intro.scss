@@ -1,5 +1,5 @@
 .intro {
-  background: var(--color-theme-highlight-block);
+  background: white /* var(--color-theme-highlight-block) */;
 
   &__summary {
     --flow-space: #{get-size(500)};
