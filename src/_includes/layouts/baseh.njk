@@ -16,9 +16,9 @@
   {% include "partials/global/site-head.njk" %}
   {% block content %}
   {% endblock content %}
-  {% include "partials/components/hero.html" %}
-  <!-- {% block foot %}
-  {% endblock %} -->
+  {% include "partials/components/hero.njk" %}
+  {% block foot %}
+  {% endblock %} 
   <script type="module" src="/js/components/theme-toggle.js" async defer></script>
   <script>
     if ('serviceWorker' in navigator) {
