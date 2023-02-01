@@ -30,12 +30,14 @@ module.exports = function(config) {
   // Passthrough copy
   config.addPassthroughCopy('src/fonts');
   config.addPassthroughCopy('src/images');
-  config.addPassthroughCopy('src/scss');
   config.addPassthroughCopy('src/js');
   config.addPassthroughCopy('src/admin/config.yml');
   config.addPassthroughCopy('src/admin/previews.js');
   config.addPassthroughCopy('node_modules/nunjucks/browser/nunjucks-slim.js');
   config.addPassthroughCopy('src/robots.txt');
+  
+  module.exports = function (eleventyConfig) {
+  eleventyConfig.addPassthroughCopy("./src/scss/");
 
   const now = new Date();
 
