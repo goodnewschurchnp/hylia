@@ -70,6 +70,12 @@ module.exports = function(config) {
       }
     }
   });
+  
+  module.exports = function(eleventyConfig) {
+
+ eleventyConfig.addPassthroughCopy("src/scss");
+
+};
 
   return {
     dir: {
