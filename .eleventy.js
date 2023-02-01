@@ -36,8 +36,6 @@ module.exports = function(config) {
   config.addPassthroughCopy('src/admin/previews.js');
   config.addPassthroughCopy('node_modules/nunjucks/browser/nunjucks-slim.js');
   config.addPassthroughCopy('src/robots.txt');
-  
-  eleventyConfig.addPassthroughCopy("src/scss");
 
   const now = new Date();
 
