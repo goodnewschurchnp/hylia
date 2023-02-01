@@ -73,7 +73,7 @@ module.exports = function(config) {
   
   module.exports = function(eleventyConfig) {
 
- eleventyConfig.addPassthroughCopy("src/scss");
+ eleventyConfig.addPassthroughCopy("./src/scss");
 
 };
 
