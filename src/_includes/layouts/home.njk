@@ -1,6 +1,6 @@
 {% extends 'layouts/baseh.njk' %}
 
-<!-- {# Intro content #}
+{# Intro content #}
 {% set introHeading = title %}
 {% set introSummary %}
   {{ content | safe }}
@@ -14,12 +14,12 @@
 {% if postListItems.length < collections.posts.length %} 
   {% set paginationNextText = archiveButtonText %}
   {% set paginationNextUrl = '/archive' %}
-{% endif %} -->
+{% endif %}
 
-<!-- {% block content %}
+{% block content %}
   <main id="main-content" tabindex="-1">
-    {% include "partials/components/intro.njk" %}
+    <!-- {% include "partials/components/intro.njk" %}
     {% include "partials/components/post-list.njk" %}
-    {% include "partials/components/pagination.njk" %}
+    {% include "partials/components/pagination.njk" %} -->
   </main>
-{% endblock %} -->
+{% endblock %}
