@@ -19,7 +19,8 @@
   {% include "partials/components/hero.html" %}
   <!-- {% block foot %}
   {% endblock %} -->
-  {{ content | safe }}
+  <!-- {{ content | safe }} -->
+  {% include "partials/components/intro.njk" %}
   <script type="module" src="/js/components/theme-toggle.js" async defer></script>
   <script>
     if ('serviceWorker' in navigator) {
